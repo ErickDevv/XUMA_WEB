@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Cloro a Granel",
+    "description": "Ideal para desinfección y limpieza",
+    "image": "/products/cloro_granel.jpg",
+    "price": "Desde $6/litro"
+  },
+  {
+    "id": 2,
+    "name": "Fabuloso a Granel",
+    "description": "Rinde más, limpia mejor",
+    "image": "/products/fabuloso_granel.jpg",
+    "price": "Desde $10/litro"
+  },
+  {
+    "id": 3,
+    "name": "Escoba Hechizera",
+    "description": "Resistente y de larga duración",
+    "image": "/products/escoba_hechizera.webp",
+    "price": "Desde $45"
+  },
+  {
+    "id": 4,
+    "name": "Microfibras",
+    "description": "Alta absorción y durabilidad",
+    "image": "/products/microfibra.png",
+    "price": "Desde $28"
+  },
+  {
+    "id": 5,
+    "name": "Cubetas",
+    "description": "Diferentes tamaños y capacidades",
+    "image": "/products/cubetas.png",
+    "price": "Desde $15"
+  },
+  {
+    "id": 6,
+    "name": "Salvo a Granel",
+    "description": "Limpieza efectiva para trastes y cocina",
+    "image": "/products/salvo_granel.webp",
+    "price": "Desde $22/litro"
+  }
+]
