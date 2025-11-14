@@ -122,7 +122,7 @@ export default function Home() {
                   Ver Productos
                 </a>
                 <a
-                  href="#whatsapp"
+                  href={`https://wa.me/${whatsappNumber}`}
                   className="inline-flex items-center justify-center bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition-all transform hover:scale-105 shadow-lg"
                 >
                   <svg
