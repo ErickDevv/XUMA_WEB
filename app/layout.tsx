@@ -40,6 +40,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        <link rel="icon" href="/xuma.png" />
+      </head>
       <body>{children}</body>
     </html>
   );

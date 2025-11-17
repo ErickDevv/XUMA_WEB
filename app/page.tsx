@@ -102,56 +102,80 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
+      {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+
+            {/* Text */}
+            <div className="space-y-6 text-center md:text-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Todo para la
                 <span className="text-pink-500"> limpieza</span> de tu
                 <span className="text-sky-400"> hogar</span>
               </h1>
-              <p className="text-xl text-gray-600">
+
+              <p className="text-lg sm:text-xl text-gray-600">
                 Productos de limpieza a granel y artículos para el hogar. La mejor calidad al mejor precio.
               </p>
-              <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center md:justify-start">
                 <a
                   href="#productos"
-                  className="inline-flex items-center justify-center bg-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-600 transition-all transform hover:scale-105 shadow-lg"
+                  className="inline-flex items-center justify-center bg-pink-500 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-pink-600 transition-all transform hover:scale-105 shadow-lg"
                 >
                   Ver Productos
                 </a>
+
                 <a
                   href={`https://wa.me/${whatsappNumber}`}
-                  className="inline-flex items-center justify-center bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition-all transform hover:scale-105 shadow-lg"
+                  className="inline-flex items-center justify-center bg-green-500 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition-all transform hover:scale-105 shadow-lg"
                 >
                   <svg
                     className="w-6 h-6 mr-2"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" /></svg>
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                  </svg>
                   WhatsApp
                 </a>
+
                 <a
                   href="#contacto"
-                  className="inline-flex items-center justify-center bg-white text-pink-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-50 transition-all border-2 border-pink-500 hover:scale-105 shadow-lg"
+                  className="inline-flex items-center justify-center bg-white text-pink-500 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-gray-50 transition-all border-2 border-pink-500 hover:scale-105 shadow-lg"
                 >
                   Ubicación
                 </a>
               </div>
             </div>
+
+            {/* Image */}
             <div className="flex justify-center">
               <img
                 src="/xuma.png"
                 alt="Mascota Ajolote"
-                className="w-3/4 sm:w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto transform hover:scale-105 transition-transform duration-300"
+                className="w-48 sm:w-64 md:w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto transform hover:scale-105 transition-transform duration-300"
               />
+            </div>
+          </div>
+
+          {/* Horarios */}
+          <div className="mt-10 inline-flex items-center space-x-3 bg-white/70 backdrop-blur-md px-5 py-3 rounded-xl shadow border border-pink-200 mx-auto md:mx-0">
+            <Clock className="text-pink-500" size={26} />
+            <div>
+              <p className="text-sm font-bold text-gray-900">Horarios</p>
+              <p className="text-sm text-gray-600">
+                Martes a Sábado: <span className="font-semibold text-gray-800">10:30 - 19:00</span> | Domingos: <span className="font-semibold text-gray-800">10:30 - 16:00</span> | Lunes: <span className="font-semibold text-gray-800">Cerrado</span>
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Decorative elements */}
-        <div className="absolute top-20 left-10 text-6xl opacity-20">🧹</div>
-        <div className="absolute bottom-20 right-10 text-6xl opacity-20">🪣</div>
+        {/* Decorative Elements */}
+        <div className="absolute top-20 left-10 text-6xl opacity-20 hidden md:block">🧹</div>
+        <div className="absolute bottom-20 right-10 text-6xl opacity-20 hidden md:block">🪣</div>
       </section>
+
 
       {/* Categories Section */}
       <section id="categorias" className="py-20 bg-white">
