@@ -317,8 +317,8 @@ export default function Home() {
                   <div className="flex items-start space-x-3">
                     <Truck className="text-sky-600 flex-shrink-0 mt-1" size={20} />
                     <div>
-                      <p className="font-bold text-gray-900">¡PRÓXIMAMENTE!</p>
-                      <p className="text-sm text-gray-600">Disponible muy pronto</p>
+                      <p className="font-bold text-gray-900">Entrega rápida</p>
+                      <p className="text-sm text-gray-600">Recibe tu pedido hasta tu casa de forma rápida y segura</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -338,7 +338,7 @@ export default function Home() {
                     className="inline-flex items-center space-x-2 bg-sky-400 text-white px-6 py-2 rounded-full font-semibold hover:bg-sky-500 transition-all w-full justify-center"
                   >
                     <MessageCircle size={20} />
-                    <span>PRÓXIMAMENTE</span>
+                    <span>Solicitar Envío</span>
                   </a>
                 </div>
               </div>
